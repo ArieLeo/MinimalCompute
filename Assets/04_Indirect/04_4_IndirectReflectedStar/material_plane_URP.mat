@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 7
+  version: 9
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -33,7 +33,8 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Opaque
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -41,7 +42,7 @@ Material:
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: e099f9f58932cec40b4acb3ff95c61a1, type: 3}
         m_Scale: {x: 0.21, y: 0.82}
-        m_Offset: {x: 0.37618762, y: 0.00010848425}
+        m_Offset: {x: 0.009517953, y: 0.010440937}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: ff3f6a90a8d62eb46afacaba383b205a, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -65,7 +66,7 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: e099f9f58932cec40b4acb3ff95c61a1, type: 3}
         m_Scale: {x: 0.21, y: 0.82}
-        m_Offset: {x: 0.19968717, y: 0.01412105}
+        m_Offset: {x: 0.37618762, y: 0.00010848425}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -96,6 +97,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
@@ -134,3 +136,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
